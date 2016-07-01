@@ -1,0 +1,17 @@
+<!-- We need to create an erb file in the views directory, new.erb, with a form that POSTs to a controller action, /posts. The controller action should use the Create CRUD action to create the blog post and save it to the database. Then, uses erb to render the index view page. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>posts</title>
+  </head>
+  <body>
+ <form method='post' action='/posts'>
+<label>Post name </label>
+<input type='text' name='name'><p>
+<label>Post content </label>
+<input type='text' name='content'><p>
+<input type='submit' value='submit'>
+ </form>
+  </body>
+</html>
